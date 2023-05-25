@@ -1,11 +1,18 @@
-const removeFromArray = function(numbers, param1, param2) {
-    for(let i=0;i<numbers.length;i++) {
-        if(param2===numbers[i]) {
-            numbers.splice(i, 1);
+// const removeFromArray = function(arr, ...theArgs) {
+//     return arr.filter(val=>!theArgs.includes(val));
+// };
+
+// That's some really advanced stuff
+
+const removeFromArray= function(array, ...args) {
+    const newArray = [];
+    array.forEach((item) =>{
+        if(!args.includes(item)){
+            newArray.push(item);
         }
-    }
-    return numbers;
-};
+    })
+    return newArray;
+}
 
 // Do not edit below this line
 module.exports = removeFromArray;
