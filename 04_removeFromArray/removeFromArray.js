@@ -1,12 +1,12 @@
-// const removeFromArray = function(arr, ...theArgs) {
-//     return arr.filter(val=>!theArgs.includes(val));
+// const removeFromArray = function(array, ...args) {
+//     return array.filter(val=>!args.includes(val));
 // };
 
 // That's some really advanced stuff
 
 const removeFromArray= function(array, ...args) {
     const newArray = [];
-    array.forEach((item) =>{
+    array.forEach(function(item){
         if(!args.includes(item)){
             newArray.push(item);
         }
