@@ -5,7 +5,7 @@ const palindromes = function (str) {
     return reverseStr===lowReStr;
 };
 
-// Here's a more optimized version of the code below
+// Here's a more optimized version of the code above.
 // const palindromes = function (str) {
 //     let processedString = str.toLowerCase().replace(/[\W_]/g, '');
 //     return processedString.split('').reverse().join('') === processedString;
